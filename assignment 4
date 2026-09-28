@@ -1,0 +1,233 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "56a52888-2785-4767-aea6-42a2c3b68ca5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2  4  6]\n",
+      " [ 8 10 12]\n",
+      " [14 16 18]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "arr=np.array ([[1,2,3],[4,5,6],[7,8,9]])\n",
+    "arr2=np.array ([[1,2,3],[4,5,6],[7,8,9]])\n",
+    "list1= arr[:,:]\n",
+    "list2= arr2[:,:]\n",
+    "print(list1+list2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c44a6c15-fbfb-467b-ba30-7e96bf2ee26f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sum of both the matrices [[ 2  4  6]\n",
+      " [ 8 10 12]\n",
+      " [14 16 18]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "arr=np.array ([[1,2,3],[4,5,6],[7,8,9]])\n",
+    "arr2=np.array ([[1,2,3],[4,5,6],[7,8,9]])\n",
+    "print(\"sum of both the matrices\", arr+arr2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "69e891ae-83ef-41c4-ac74-46ea79cd2a11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 0, 0]\n",
+      "[0, 0, 0]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 0, 0]\n",
+      "[0, 0, 0]\n",
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 0]\n",
+      "[0, 0, 0]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 0]\n",
+      "[0, 0, 0]\n",
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[0, 0, 0]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[0, 0, 0]\n",
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 0, 0]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 0, 0]\n",
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 16, 0]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 16, 0]\n",
+      "matrix1:\n",
+      "[1, 2, 3]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 16, 18]\n",
+      "[4, 5, 6]\n",
+      "\n",
+      "matrix2:\n",
+      "[7, 8, 9]\n",
+      "[10, 11, 12]\n",
+      "\n",
+      "sum of matrix1 and matrix2:\n",
+      "[8, 10, 12]\n",
+      "[14, 16, 18]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#create two matrices using nested list\n",
+    "matrix1=[[1,2,3],[4,5,6]]\n",
+    "matrix2=[[7,8,9],[10,11,12]]\n",
+    "\n",
+    "#initialize a result matrix of the same size\n",
+    "result=[[0,0,0],[0,0,0]]\n",
+    " \n",
+    "for i in range(len(matrix1)):\n",
+    "    for j in range(len(matrix1[0])):\n",
+    "        result[i][j]=matrix1[i][j]+ matrix2[i][j]\n",
+    "\n",
+    "        print(\"matrix1:\")\n",
+    "        for row in matrix1:\n",
+    "            print(row)\n",
+    "\n",
+    "            print(\"\\nmatrix2:\")\n",
+    "            for row in matrix2:\n",
+    "                print(row)\n",
+    "                \n",
+    "            print(\"\\nsum of matrix1 and matrix2:\")\n",
+    "            for row in result:\n",
+    "                 print (row)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4bddfbe7-058c-4b07-b3c8-524b10c1d5e8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
